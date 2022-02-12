@@ -11,6 +11,9 @@ int main(int argc, char **argv)
     while(ros::ok())
     {
         client1.reportFatalStatus("lost heartbeat.");
+        usleep(500000);
+        client1.reportErrorStatus("No motor detected.");
+        usleep(500000);
         ros::spinOnce();
         loop_rate.sleep();
     }
