@@ -1,0 +1,6 @@
+<launch>
+    <node pkg="system_monitor" type="central_monitor_server_node" name="central_monitor_server_node" output="screen" />
+    <node pkg="system_monitor" type="client1_node" name="client1_node" output="screen" />
+    <node pkg="system_monitor" type="client2_node" name="client2_node" output="screen" />
+    <node pkg="system_monitor" type="client3_node" name="client3_node" output="screen" />
+</launch>
