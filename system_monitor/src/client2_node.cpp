@@ -8,6 +8,7 @@ int main(int argc, char **argv)
     ros::Rate loop_rate(0.1);
 
     SystemMonitorClientInterface client2(nh, 2);
+    ROS_INFO("Client 2 Node Started.");
     
     while(ros::ok())
     {
